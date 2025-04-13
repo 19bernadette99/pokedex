@@ -1,56 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="icon" href="./img/pokeball.png">
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="icon" href="./img/pokeball.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
     <title>Pokedex</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="preloader">
-        <a href="/index.html" class="loading-text">
-            <img src="./img/pokemon.png" alt="Pokemon" class="pokemon-logo" id="logo">
-        </a>
-        
-        <div class="progress-bar-container">
-            <div id="progress-bar"></div>
+      <a href="/index.html" class="loading-text">
+        <img
+          src="./img/pokemon.png"
+          alt="Pokemon"
+          class="pokemon-logo"
+          id="logo"
+        />
+      </a>
+
+      <div class="progress-bar-container">
+        <div id="progress-bar"></div>
+      </div>
+    </div>
+
+    <div id="main-content" style="display: none">
+      <header>
+        <div class="header-content">
+          <a href="index.html" class="logo" id="logo">
+            <img
+              src="./img/pokemon.png"
+              alt="pokemonfontimg"
+              class="pokemonfontimg"
+            />
+          </a>
+
+          <div class="search-container">
+            <input
+              type="text"
+              id="search"
+              class="search-bar"
+              placeholder="Search for Pokémon..."
+            />
+            <button id="search-button" class="search-button">🔍</button>
+          </div>
         </div>
+      </header>
+
+      <div class="pokemon-sektion" id="pokemon-list"></div>
+
+      <div class="button-container">
+        <button class="loading-btn" id="load-more-btn">Load More</button>
+        <button class="scroll-up-btn" id="scroll-up-btn">⮝</button>
+      </div>
     </div>
 
-    <div id="main-content" style="display:none;">
-        <header>
-            <div class="header-content">
-                
-                <a  href="index.html"  class="logo" id="logo">
-                    <img src="./img/pokemon.png" alt="pokemonfontimg" class="pokemonfontimg">
-                </a>
-        
-                <div class="search-container">
-                    <input type="text" id="search" class="search-bar" placeholder="Search for Pokémon...">
-                    <button id="search-button" class="search-button">🔍</button>
-                </div>
-            </div>
-        </header>
+    <div class="flex"></div>
 
-        <div class="pokemon-sektion" id="pokemon-list"></div>
-
-        <div class="button-container">
-            <button class="loading-btn" id="load-more-btn">Load More</button>
-            <button class="scroll-up-btn" id="scroll-up-btn">&#11014;</button>
-
-        </div> 
-    </div>
-
-        <div class="flex"></div>
-        
-        <footer>
-            <h3>© by Bernadette Pöltl</h3>
-        </footer>
+    <footer>
+      <h3>© by Bernadette Pöltl</h3>
+    </footer>
 
     <script src="./js/template.js"></script>
     <script src="./js/script.js"></script>
-</body>
+  </body>
 </html>
